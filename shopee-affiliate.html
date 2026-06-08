@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tumbas Mriki — Rekomendasi Produk Shopee Terbaik</title>
+<meta name="description" content="Temukan produk-produk terbaik di Shopee dengan harga terjangkau. Kurasi spesial dari kami untuk kamu.">
+<meta property="og:title" content="Tumbas Mriki — Rekomendasi Produk Shopee">
+<meta property="og:description" content="Produk pilihan terpercaya dengan harga terbaik di Shopee.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #FF5722;
+    --orange-light: #FF8A65;
+    --orange-pale: #FFF3EF;
+    --dark: #1A0F0A;
+    --mid: #4A2E22;
+    --muted: #8C6A5A;
+    --surface: #FDFAF8;
+    --white: #FFFFFF;
+    --border: rgba(74,46,34,0.12);
+    --radius: 16px;
+    --radius-sm: 10px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--surface);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(253,250,248,0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 clamp(1.5rem, 5vw, 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo-dot {
+    width: 10px; height: 10px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--orange); }
+
+  .nav-cta {
+    background: var(--orange);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .nav-cta:hover { background: var(--orange-light); transform: translateY(-1px); }
+
+  /* HERO */
+  .hero {
+    padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--orange-pale);
+    color: var(--orange);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,87,34,0.2);
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--dark);
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .hero-title span {
+    color: var(--orange);
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-title span::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--orange);
+    border-radius: 2px;
+    opacity: 0.25;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-top: 1.25rem;
+    font-weight: 300;
+    max-width: 480px;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(255,87,34,0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-primary:hover {
+    background: var(--orange-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(255,87,34,0.35);
+  }
+
+  .btn-ghost {
+    color: var(--mid);
+    padding: 14px 28px;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1.5px solid var(--border);
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
+
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    animation: fadeUp 0.6s 0.4s ease both;
+  }
+
+  .stat-item { display: flex; flex-direction: column; }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark);
+  }
+  .stat-label { font-size: 0.8rem; color: var(--muted); font-weight: 300; }
+
+  /* Hero visual */
+  .hero-visual {
+    animation: fadeUp 0.6s 0.2s ease both;
+    position: relative;
+  }
+
+  .hero-card-stack {
+    position: relative;
+    height: 380px;
+  }
+
+  .hero-bg-card {
+    position: absolute;
+    background: var(--orange-pale);
+    border-radius: 24px;
+    border: 1.5px solid rgba(255,87,34,0.15);
+  }
+
+  .hero-bg-card:nth-child(1) {
+    width: 85%;
+    height: 85%;
+    top: 8%;
+    right: 0;
+    transform: rotate(4deg);
+  }
+
+  .hero-bg-card:nth-child(2) {
+    width: 85%;
+    height: 85%;
+    top: 4%;
+    right: 2%;
+    transform: rotate(2deg);
+    background: rgba(255,138,101,0.12);
+  }
+
+  .hero-main-card {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    top: 0;
+    right: 0;
+    background: white;
+    border-radius: 24px;
+    border: 1.5px solid var(--border);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 20px 60px rgba(26,15,10,0.08);
+  }
+
+  .card-img-placeholder {
+    flex: 1;
+    background: linear-gradient(135deg, var(--orange-pale) 0%, rgba(255,138,101,0.2) 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+  }
+
+  .card-info { display: flex; flex-direction: column; gap: 4px; }
+  .card-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--dark); }
+  .card-price { font-size: 1.1rem; font-weight: 500; color: var(--orange); }
+  .card-price-orig { font-size: 0.8rem; color: var(--muted); text-decoration: line-through; }
+
+  .card-badge {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--orange);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 100px;
+  }
+
+  /* SECTION COMMON */
+  section { padding: clamp(3rem, 8vw, 5rem) clamp(1.5rem, 5vw, 4rem); }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+
+  .section-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    max-width: 560px;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+  /* CATEGORIES */
+  .categories-bg { background: var(--dark); color: white; }
+
+  .categories-bg .section-title { color: white; }
+  .categories-bg .section-sub { color: rgba(255,255,255,0.55); }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .category-pill {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, border-color 0.2s;
+    text-decoration: none;
+    display: block;
+  }
+
+  .category-pill:hover {
+    background: rgba(255,87,34,0.15);
+    border-color: rgba(255,87,34,0.4);
+    transform: translateY(-3px);
+  }
+
+  .category-pill .cat-icon { font-size: 1.75rem; margin-bottom: 0.5rem; display: block; }
+  .category-pill .cat-name { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.85); display: block; }
+
+  /* PRODUCTS */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(26,15,10,0.1);
+  }
+
+  .product-img {
+    aspect-ratio: 1;
+    background: var(--orange-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    position: relative;
+  }
+
+  .product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--orange);
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+  }
+
+  .product-rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(4px);
+    border-radius: 100px;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .product-body { padding: 1.1rem; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .product-name { font-weight: 500; font-size: 0.9rem; color: var(--dark); line-height: 1.4; }
+  .product-store { font-size: 0.78rem; color: var(--muted); }
+
+  .product-pricing {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+  }
+
+  .product-price { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--orange); }
+  .product-orig { font-size: 0.8rem; color: var(--muted); text-decoration: line-through; }
+
+  .product-footer {
+    padding: 0 1.1rem 1.1rem;
+  }
+
+  .btn-shopee {
+    width: 100%;
+    background: var(--orange);
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .btn-shopee:hover { background: var(--orange-light); transform: scale(1.02); }
+
+  /* BANNER */
+  .promo-banner {
+    background: linear-gradient(135deg, var(--dark) 0%, #3D1F10 100%);
+    border-radius: 24px;
+    padding: clamp(2rem, 5vw, 3.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    margin: 0 clamp(1.5rem, 5vw, 4rem);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .promo-banner::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,87,34,0.15);
+    border-radius: 50%;
+    right: -60px;
+    top: -80px;
+  }
+
+  .promo-content { position: relative; z-index: 1; }
+  .promo-tag {
+    display: inline-block;
+    background: rgba(255,87,34,0.25);
+    color: var(--orange-light);
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255,87,34,0.3);
+  }
+
+  .promo-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .promo-title span { color: var(--orange-light); }
+  .promo-sub { font-size: 0.95rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; font-weight: 300; }
+  .promo-actions { position: relative; z-index: 1; display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  /* TESTIMONIALS */
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .testi-card {
+    background: white;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--border);
+    padding: 1.5rem;
+  }
+
+  .testi-stars { color: var(--orange); font-size: 0.9rem; margin-bottom: 0.75rem; }
+  .testi-text { font-size: 0.92rem; color: var(--mid); line-height: 1.6; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.25rem; }
+
+  .testi-avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--orange-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .testi-name { font-size: 0.875rem; font-weight: 500; color: var(--dark); }
+  .testi-meta { font-size: 0.78rem; color: var(--muted); }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.65);
+    padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; color: white; margin-bottom: 0.75rem; }
+  .footer-desc { font-size: 0.875rem; line-height: 1.7; max-width: 300px; }
+  .footer-disclaimer { font-size: 0.75rem; margin-top: 1rem; opacity: 0.45; line-height: 1.6; }
+
+  .footer-col-title { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: white; margin-bottom: 1rem; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-links a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--orange-light); }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 2.5rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .nav-links { display: none; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .promo-banner { text-align: center; justify-content: center; }
+  }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <span class="logo-dot"></span>Tumbas Mriki
+  </a>
+  <ul class="nav-links">
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#kategori">Kategori</a></li>
+    <li><a href="https://shopee.co.id" target="_blank" class="nav-cta">Ke Shopee →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section style="padding-top: clamp(3rem, 8vw, 5rem); padding-bottom: 0; padding-left: clamp(1.5rem, 5vw, 4rem); padding-right: clamp(1.5rem, 5vw, 4rem);">
+  <div class="section-inner" style="max-width: 1200px; margin: 0 auto;">
+    <div class="hero" style="padding: 0; max-width: none;">
+      <div class="hero-content">
+        <div class="hero-tag">
+          🛍️ Kurasi Terbaik Shopee 2025
+        </div>
+        <h1 class="hero-title">
+          Belanja <span>Cerdas</span>,<br>Hemat Maksimal
+        </h1>
+        <p class="hero-sub">
+          Kami kurasi ratusan produk Shopee terpercaya — dari elektronik, fashion, hingga perawatan diri — dengan harga dan kualitas terbaik.
+        </p>
+        <div class="hero-actions">
+          <a href="#produk" class="btn-primary">Lihat Produk Pilihan ↓</a>
+          <a href="#kategori" class="btn-ghost">Jelajahi Kategori</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Produk Terkurasi</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Rating Rata-rata</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">12rb+</span>
+            <span class="stat-label">Pembeli Puas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-bg-card"></div>
+          <div class="hero-bg-card"></div>
+          <div class="hero-main-card">
+            <span class="card-badge">🔥 Terlaris</span>
+            <div class="card-img-placeholder">🎧</div>
+            <div class="card-info">
+              <span class="card-name">TWS Earbuds Pro X5</span>
+              <div style="display:flex;gap:8px;align-items:center">
+                <span class="card-price">Rp 149.000</span>
+                <span class="card-price-orig">Rp 350.000</span>
+              </div>
+              <span style="font-size:0.75rem;color:var(--orange)">⭐ 4.9 (3.2rb ulasan)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KATEGORI -->
+<section class="categories-bg reveal" id="kategori" style="margin-top: 4rem;">
+  <div class="section-inner">
+    <div class="section-label">Kategori Populer</div>
+    <h2 class="section-title">Semua Ada di Shopee</h2>
+    <p class="section-sub">Temukan produk terbaik di berbagai kategori yang sudah kami kurasi khusus.</p>
+    <div class="category-grid">
+      <a href="https://shopee.co.id/Elektronik-cat.11044871" target="_blank" class="category-pill">
+        <span class="cat-icon">📱</span>
+        <span class="cat-name">Elektronik</span>
+      </a>
+      <a href="https://shopee.co.id/Fashion-Wanita-cat.11044972" target="_blank" class="category-pill">
+        <span class="cat-icon">👗</span>
+        <span class="cat-name">Fashion</span>
+      </a>
+      <a href="https://shopee.co.id/Kecantikan-Perawatan-Tubuh-cat.11044934" target="_blank" class="category-pill">
+        <span class="cat-icon">💄</span>
+        <span class="cat-name">Kecantikan</span>
+      </a>
+      <a href="https://shopee.co.id/Perlengkapan-Rumah-cat.11044969" target="_blank" class="category-pill">
+        <span class="cat-icon">🏠</span>
+        <span class="cat-name">Rumah Tangga</span>
+      </a>
+      <a href="https://shopee.co.id/Olahraga-Outdoor-cat.11044930" target="_blank" class="category-pill">
+        <span class="cat-icon">⚽</span>
+        <span class="cat-name">Olahraga</span>
+      </a>
+      <a href="https://shopee.co.id/Makanan-Minuman-cat.11044956" target="_blank" class="category-pill">
+        <span class="cat-icon">🍜</span>
+        <span class="cat-name">Makanan</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUK UNGGULAN -->
+<section id="produk" class="reveal">
+  <div class="section-inner">
+    <div class="section-label">Pilihan Editor</div>
+    <h2 class="section-title">Produk Unggulan Minggu Ini</h2>
+    <p class="section-sub">Setiap produk di bawah sudah kami riset dari sisi kualitas, ulasan pembeli, dan value for money.</p>
+
+    <div class="products-grid">
+
+      <!-- Produk 1: GANTI LINK AFILIASI DI href -->
+      <div class="product-card">
+        <div class="product-img">
+          🎧
+          <span class="product-badge">-57%</span>
+          <span class="product-rating">⭐ 4.9</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">TWS Earbuds Pro X5 — Noise Cancelling ANC</p>
+          <p class="product-store">📦 TechStore Official</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 149.000</span>
+            <span class="product-orig">Rp 350.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <!-- GANTI href dengan link afiliasi Shopee kamu -->
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_1" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          💊
+          <span class="product-badge">Terlaris</span>
+          <span class="product-rating">⭐ 4.8</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Vitamin C 1000mg Effervescent — 10 Tablet</p>
+          <p class="product-store">📦 HealthPlus Official</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 28.500</span>
+            <span class="product-orig">Rp 45.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_2" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          🧴
+          <span class="product-badge">Top Rated</span>
+          <span class="product-rating">⭐ 4.9</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Sunscreen SPF50 PA++++ Lightweight Gel 60ml</p>
+          <p class="product-store">📦 Somethinc Official</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 89.000</span>
+            <span class="product-orig">Rp 130.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_3" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          ⌚
+          <span class="product-badge">-40%</span>
+          <span class="product-rating">⭐ 4.7</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Smartwatch Pro Sport — Heart Rate, SpO2, GPS</p>
+          <p class="product-store">📦 SmartGadget ID</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 249.000</span>
+            <span class="product-orig">Rp 415.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_4" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="product-card">
+        <div class="product-img">
+          🧳
+          <span class="product-badge">Flash Sale</span>
+          <span class="product-rating">⭐ 4.8</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Koper Kabin 20" Hardcase Anti-Gores Ringan</p>
+          <p class="product-store">📦 LuggageMart Official</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 319.000</span>
+            <span class="product-orig">Rp 580.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_5" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="product-card">
+        <div class="product-img">
+          🍳
+          <span class="product-badge">Pilihan Editor</span>
+          <span class="product-rating">⭐ 4.9</span>
+        </div>
+        <div class="product-body">
+          <p class="product-name">Wajan Anti Lengket Granit 28cm — Bebas Teflon</p>
+          <p class="product-store">📦 KitchenPro ID</p>
+          <div class="product-pricing">
+            <span class="product-price">Rp 185.000</span>
+            <span class="product-orig">Rp 310.000</span>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="https://s.shopee.co.id/LINK_AFILIASI_6" target="_blank" class="btn-shopee">Beli di Shopee →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="reveal" style="padding-top: 0;">
+  <div class="section-inner">
+    <div class="promo-banner">
+      <div class="promo-content">
+        <span class="promo-tag">⚡ Penawaran Terbatas</span>
+        <h2 class="promo-title">Gratis Ongkir ke<br><span>Seluruh Indonesia</span></h2>
+        <p class="promo-sub">Berlaku untuk pembelian pertama via link kami. Min. belanja Rp 0.</p>
+      </div>
+      <div class="promo-actions">
+        <a href="https://shopee.co.id" target="_blank" class="btn-primary">Klaim Sekarang →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">
+        <span style="color:var(--orange)">●</span> PilihPintar
+      </div>
+      <p class="footer-desc">
+        Platform rekomendasi produk Shopee terkurasi. Kami membantu kamu menemukan produk terbaik dengan harga terjangkau.
+      </p>
+      <p class="footer-disclaimer">
+        * Halaman ini mengandung link afiliasi Shopee. Kami mendapat komisi kecil dari setiap pembelian yang dilakukan melalui link di sini, tanpa biaya tambahan dari kamu.
+      </p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigasi</p>
+      <ul class="footer-links">
+        <li><a href="#produk">Produk Pilihan</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="https://shopee.co.id" target="_blank">Buka Shopee</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Info</p>
+      <ul class="footer-links">
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Kebijakan Privasi</a></li>
+        <li><a href="#">Disclaimer Afiliasi</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Tumbas Mriki. Dibuat dengan ❤️ di Indonesia.</span>
+    <span style="color:var(--orange-light)">Program Afiliasi Shopee</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+        observer.unobserve(el.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
