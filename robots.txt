@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# GANTI dengan URL domain kamu
+Sitemap: https://shopee-affiliate.vercel.app/sitemap.xml
