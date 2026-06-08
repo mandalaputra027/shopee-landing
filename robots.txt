@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # GANTI dengan URL domain kamu
-Sitemap: https://shopee-affiliate.vercel.app/sitemap.xml
+Sitemap: https://shopee-landing-pink.vercel.app/sitemap.xml
